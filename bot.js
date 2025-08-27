@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder } = require('discord.js');
 const express = require('express');
-const fetch = require('node-fetch');
+// fetch est disponible nativement dans Node.js 18+
 
 // Configuration et logs de démarrage
 console.log('=== Démarrage du bot Discord LorcaJudge ===');
