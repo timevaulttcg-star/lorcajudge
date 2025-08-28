@@ -13,12 +13,7 @@ const client = new Client({
 });
 
 const BADGE_ROLE_MAPPING = {
-    'L1': '1410210518534197321',
-    'L2': '1410210518534197321', // Remplacer par vrais IDs
-    'Admin': '1410210518534197321',
-    'Community Contributor': '1410210518534197321',
-    'Exam Proctor': '1410210518534197321',
-    'Regional Judge (L2)': '1410210518534197321'
+    'L1': '1410210518534197321'
 };
 
 const GUILD_ID = process.env.DISCORD_GUILD_ID;
