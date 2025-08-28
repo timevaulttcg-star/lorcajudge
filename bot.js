@@ -15,15 +15,7 @@ const client = new Client({
 
 // Mapping badges vers rôles Discord
 const BADGE_ROLE_MAPPING = {
-    'L1': '1410210518534197321',
-    'L2': 'ROLE_ID_L2', // À remplacer par les vrais IDs
-    'L3': 'ROLE_ID_L3',
-    'L4': 'ROLE_ID_L4',
-    'Admin': 'ROLE_ID_ADMIN',
-    'LoreKeeper': 'ROLE_ID_LOREKEEPER',
-    'Regional Judge (L2)': '1410210518534197321', // Même rôle que L1 pour l'instant
-    'Expert Judge (L3)': 'ROLE_ID_L3',
-    'Local Judge (L1)': '1410210518534197321'
+    'L1': '1410210518534197321'
 };
 
 const GUILD_ID = process.env.DISCORD_GUILD_ID;
