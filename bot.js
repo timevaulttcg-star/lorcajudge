@@ -98,7 +98,7 @@ client.on('interactionCreate', async interaction => {
                 content: result.success ? 
                     '🎉 Compte lié avec succès !' : 
                     '❌ Code invalide ou expiré.',
-                ephemeral: true
+    flags: 64
             });
         } catch (error) {
             await interaction.reply({
