@@ -181,22 +181,21 @@ client.on('interactionCreate', async interaction => {
     console.log(`[COMMAND] ${interaction.user.username} a utilisé /${interaction.commandName}`);
     
     if (interaction.commandName === 'link-account') {
-        const code = interaction.options.getString('code');
-        
-        try {
-            // Appeler l'API pour vérifier le code
-            const response = await fetch(`${API_BASE_URL}/discord_integration.php`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    action: 'verify_discord_with_code',
-                    verification_code: code,
-                    discord_id: interaction.user.id,
-                    discord_username: interaction.user.username
-                })
-            });
+    const code = interaction.options.getString('code');
+    
+    try {
+        const response = await fetch(`https://lorcanajudge.com/api/discord_integration.php`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                action: 'verify_discord_with_code',
+                verification_code: code,
+                discord_id: interaction.user.id,
+                discord_username: interaction.user.username
+            })
+        });
             
             const result = await response.json();
             
